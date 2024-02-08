@@ -139,7 +139,7 @@ section {
     margin: 2rem 0 4rem;
 }
 
-
+/*
 .photo .circle-spin {
     position: absolute;
     top: 50%;
@@ -154,7 +154,7 @@ section {
     border-right: .2rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
 } 
-
+*/
 .home-container .text-animate {
     position: relatives;
     width: 100%;
@@ -172,7 +172,7 @@ section {
     animation-delay: 2s;
     opacity: .9;
 }
-
+/*
 .home-container .text-animate h3::before { 
     content: '';
     position: absolute;
@@ -184,7 +184,7 @@ section {
     z-index: -1;
     animation: homeCursorText 5s linear infinite;
     animation-delay: 2s;
-}
+} */
 
 
 .btn-box {
@@ -315,7 +315,7 @@ section {
         width: 0;
     }
     65%, 78%, 85% {
-        width: 24%;
+        width: 25%;
         opacity: 1;
     }
     75%, 81% {
@@ -724,7 +724,28 @@ form input, form textarea {
     }
 }
 
+@media (max-width:991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+    section {
+        padding: 10rem 4% 2rem;
+    }
+    .home {
+        padding: 0 4%;
+    }
+    .footer {
+        padding: 2rem 4%;
+    }
 
+    .text-animate h3 {
+        background-position: -61rem 0;
+    }
+
+    .home-container .text-animate h3::before {
+        left: 4%;
+    }
+}
 /*
 
 @media (max-width:1150px) {
