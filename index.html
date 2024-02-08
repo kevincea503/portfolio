@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/jpg" href="/resources/icons8-star-filled-16.png"/>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">{K.cea}</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">About</a>
+            <a href="#projects">Proyects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+    <div id="particles-js"></div>
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="info">
+                <h1>Hola, soy <span>Kevin Cea</span> </h1>
+                <div class="text-animate">
+                    <h3>Software Engineer</h3>
+                </div>
+                <p>Soy estudiante egresado de la carrera de ingeniería 
+                    informática en UCA El Salvador, también soy data analyst jr por kodigo academy.
+                    <strong>Soy salvadoreño y actualmente vivo en antiguo cuscatlán, La Libertad. 
+                    Me considero un apacionado por el mundo de la tecnología y el análisis de datos.</strong> 
+                    Mi objetivo es ayudar a generar valor al negocio a través de la creación y administación
+                    de software de calidad y nunca dejar de aprender.</p>
+                    </p>
+                <div class="btn-box">
+                    <a href="#" class="btn">Contactar</a>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="resources/perfil_background_cuadrado.jpg" alt="" width="300" height="300px">
+                <span class="circle-spin"></span>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/alexandercea25/?hl=es"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="www.linkedin.com/in/kevin-cea-1334872a0"><i class='bx bxl-linkedin' ></i></a> 
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://github.com/kevincea503"><i class='bx bxl-github'></i></a>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading"><span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="resources/proyecto_power-bi.PNG">
+                <div class="projects-layer">
+                    <h4>Power BI</h4>
+                    <p>Dashboadr de ventas para el área de finanzas de un empresa ficticia con KPIs y formato condicional. Pensado en la elegancia y estética</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMjcxOWQzMmQtZjRlZC00YTczLWEzNzAtZWM3ZjllYTM1OGRiIiwidCI6ImVkYmIyMjg0LTRjNzktNGJlYi1hMjEwLWYzZTBiYWMxMDAzYiIsImMiOjR9"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="resources/Proyecto_looker.PNG">
+                <div class="projects-layer">
+                    <h4>Looker studio</h4>
+                    <p>Dashboard interactivo de ventas ficticias para la región de EEUU</p>
+                    <a href="https://lookerstudio.google.com/reporting/dcb8a8e7-0040-4e72-a9c5-1bee2574f49e"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="resources/proyecto_tableau.PNG">
+                <div class="projects-layer">
+                    <h4>Tableau</h4>
+                    <p>Historia con dashboards del proyecto final para la materia de inteligencia de negocios. Resultado de un prceso ETL completo con base de datos</p>
+                    <a href="https://public.tableau.com/app/profile/kevin.cea/viz/Sales_AdventureWorks/Story1"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="resources/Proyecto_springPNG.PNG">
+                <div class="projects-layer">
+                    <h4>API Rest con spring boot</h4>
+                    <p>Sistema de seguimiento académico. Aquitectura N capas,JPA Hibernate, lombok, jsp</p>
+                    <a href="https://public.tableau.com/app/profile/kevin.cea/viz/Sales_AdventureWorks/Story1"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('tech')">Technical Skills</p>
+            <p class="tab-links" onclick="opentab('soft')">Soft Skills</p>
+            <p class="tab-links" onclick="opentab('cert')">Certifications</p>
+        </div>
+        <div class="tab-contents active-tab" id="tech">
+            <ul class="tech"> 
+                <li><span><i class='bx bxl-github'></i> Git y Github</span></li>
+                <li><span><i class='bx bxs-data'></i> <i class='bx bxl-postgresql'></i> Administración de base de datos Oracle y postgresql</span></li>
+                <li><span><i class='bx bxl-spring-boot' ></i> Creación de API Rest Con Spring boot</span></li>
+                <li><span><i class='bx bxl-netlify'></i> Proceso ETL para la creación de datawarehouse</span></li>
+                <li><span><i class='bx bxl-html5'></i> <i class='bx bxl-css3'></i> <i class='bx bxl-javascript' ></i> Desarrollo web</span></li>
+                <li><span><i class='bx bxl-python'></i> Python con Panda</span></li>
+                <li><span><i class='bx bxl-react'></i> React js</span></li>
+                <li><span><i class='bx bxs-bar-chart-alt-2'></i> Power BI, Tablaue y looker studio ></span></li>  
+                <li><span><i class='bx bxl-trello'></i> Metodologías ágil scrum</span> 
+                <li><span><i class='bx bxs-terminal'></i> PL-SQL avanzado</span>     
+                
+            </ul>
+        </div>
+        <div class="tab-contents" id="soft">
+            <ul class="tech">
+                <li><span><i class='bx bx-user-voice'></i> Comunicación efectiva</span></li>
+                <li><span><i class='bx bx-group'></i> Trabajo en equipo</span></li>
+                <li><span><i class='bx bx-devices'></i> Adaptabilidad</span></li>
+                <li><span><i class='bx bxs-file-find'></i> Resolución de problemas</span></li>
+                <li><span><i class='bx bx-abacus'></i> Capacidad de análisis</span></li>
+                <li><span><i class='bx bxs-award'></i> Proactivo</span></li>
+                <li><span><i class='bx bxs-image'></i> Autodidacta</span></li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="cert">
+            <ul class="tech">
+                <li>
+                    <a href="https://www.credly.com/badges/6a472daa-9125-4994-a015-6a5506d4e538" class="content-certs">     
+                        <div class="content-cert">
+                        <img class="imagen-cert" src="resources/scrum-foundation-professional-certification-sfpc.png" alt="">
+                        <div class="description-cert">
+                            <h3>Scrum Fundation Professional Certification - SFPC™</h3>
+                            <p>CertiProf</p>
+                            <p>Expedición: dic. 2023 Vence: dic. 2026</p> 
+                        </div>
+                        </div>
+                      </a> 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>Agosto - Diciembre 2023 </div>
+                            <h3>Bootcamp data analyst - Kodigo Academy</h3>
+                            <p>Curso intensivo con profesionales de mucha experiencia en el tratamiento de datos.
+                                Administración de base de datos, proceso ETL incluido python y visualizaciones fueron los pilares.
+                            </p>    
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2019 - 2024 </div>
+                            <h3>Ingeniería informática - UCA </h3>
+                            <p>He sido estudiante completamente becado. He aprendido el panorama global del 
+                                desarrollo y administración de software, por lo que me resulta sencillo 
+                                aprender nuevos temas de esta área.
+                             </p>    
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2016 - 2018 </div>
+                            <h3>Bachillerato técnico en desarrollo de software - INSO</h3>
+                            <p>Primer contacto con el hermoso mundo de la tecnología</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">professional Experience</h3>
+                <!-- 
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"></div>  
+                        </div>
+                    </div>
+                </div>-->
+             </div>
+        </div>
+    </section>
+    <section class="contac" id="contact">
+        <div class="contac-container">
+            <div class="contac-left">
+                <h2 class="contac-me"> Contac me</h2>
+                <h3><i class='bx bxl-gmail'></i> kevincea142@gmail.com</h3>
+                <h3><i class='bx bx-phone'></i> +503 7094-8054</h3> 
+                <h3><i class='bx bxs-map'></i> Antiguo cuscatlán, El Salvador</h3>
+                <div class="btn-box">
+                    <a href="resources/Kevin_Alexander_Cea_Patriz-CV.pdf" download class="btn cv">Curriculum</a>
+                </div>
+            </div>
+            <div class="contac-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea type="email" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <div class="btn-box">
+                        <Button type="submit" class="btn "> Enviar </Button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Copyright © Kevin Cea 2024</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
